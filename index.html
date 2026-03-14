@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>José Melchor | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+
+<nav class="menu transparent">
+
+
+<div class="submenu">
+    <a href="#">Projects</a>
+
+    <div class="submenu-items">
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Quant Portfolio Optimization</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Credit Scoring Model</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Advanced Trading Strategies</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Mexico Crime Data Explorer</a>
+        </div>
+
+    </div>
+</div>
+
+
+<a href="https://github.com/ppmelch" target="_blank">GitHub</a>
+
+<a href="index.html"  >Home</a>
+
+
+
+
+<a href="about.html"  >About</a>
+
+
+<div class="submenu contact-menu">
+    <a href="#">Contact</a>
+
+    <div class="submenu-items">
+        <div class="submenu-item">
+            <img src="images/Tel.png" alt="Phone">
+            <a href="tel:+523312990677">+52 33 1299 0677</a>
+        </div>
+    </div>
+</div>
+
+
+</nav>
+
+
+
+<!-- Sección principal -->
+
+<section class="hero">
+
+<h1 class="typewriter">Hi! I'm José.</h1>
+
+<h2 class="hero-subtitle">Financial Engineer Student.</h2>
+
+<p class="hero-description">
+Financial Engineering student passionate about machine learning, web development, and data-driven financial solutions. 
+I build models and interactive applications to analyze risk, trading strategies, and financial data.
+</p>
+
+
+
+</section>
+
+
+
+
+
+<section class="projects">
+
+<div class="project-card">
+
+<div class="project-header">
+<h3>Quant Portfolio Optimization</h3>
+<p>Machine learning model for optimizing financial portfolios.</p>
+</div>
+
+<div class="project-preview">
+<img src="images/test.png" alt="Quant Portfolio Optimization">
+</div>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+
+
+<section class="projects">
+
+<div class="project-card">
+
+<div class="project-header">
+<h3>Credit Scoring Model</h3>
+<p>Machine learning model for predicting credit risk using financial data.</p>
+</div>
+
+<div class="project-preview">
+<img src="images/test.png" alt="Credit Scoring Model">
+</div>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="projects">
+
+<div class="project-card">
+
+<div class="project-header">
+<h3>Advanced Trading Strategies</h3>
+<p>Machine learning model for optimizing trading strategies using historical market data.</p>
+</div>
+
+<div class="project-preview">
+<img src="images/test.png" alt="Advanced Trading Strategies">
+</div>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="projects">
+
+<div class="project-card">
+
+<div class="project-header">
+<h3>Mexico Crime Data Explorer</h3>
+<p>Interactive visualization tool for exploring crime data in Mexico.</p>
+</div>
+
+<div class="project-preview">
+<img src="images/test.png" alt="Mexico Crime Data Explorer">
+</div>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+<div class="social-icons">
+
+<a href="https://github.com/ppmelch" target="_blank">
+<img src="images/github.png" alt="GitHub">
+</a>
+
+<a href="https://linkedin.com/in/ppmelch" target="_blank">
+<img src="images/LK.png" alt="LinkedIn">
+</a>
+
+<a href="https://x.com/ppmelch_" target="_blank">
+<img src="images/X.png" alt="X">
+</a>
+
+<a href="mailto:jose.melchor.soto@gmail.com">
+<img src="images/correo.png" alt="Email">
+</a>
+
+</div>
+
+<h5>© 2026 José Armando Melchor Soto. All rights reserved.</h5>
+
+</footer>
+
+<script>
+
+const menu = document.querySelector(".menu");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 10) {
+        menu.classList.remove("transparent");
+        menu.classList.add("scrolled");
+    } else {
+        menu.classList.remove("scrolled");
+        menu.classList.add("transparent");
+    }
+
+});
+
+</script>
+
+<script>
+
+const links = document.querySelectorAll(".menu a");
+const currentPage = window.location.pathname;
+
+links.forEach(link => {
+    if(link.getAttribute("href") === currentPage.split("/").pop()){
+        link.classList.add("active");
+    }
+});
+
+</script>
+
+</body>
+</html>
