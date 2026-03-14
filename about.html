@@ -7,9 +7,213 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_about.css">
 </head>
+
+
 <body>
-    
+
+
+<nav class="menu transparent">
+
+
+<div class="submenu">
+    <a href="#">Projects</a>
+
+    <div class="submenu-items">
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Quant Portfolio Optimization</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Credit Scoring Model</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Advanced Trading Strategies</a>
+        </div>
+
+        <div class="submenu-item">
+            <img src="images/portfolio.png" alt="Portfolio">
+            <a href="#">Mexico Crime Data Explorer</a>
+        </div>
+
+    </div>
+</div>
+
+
+<a href="https://github.com/ppmelch" target="_blank">GitHub</a>
+
+<a href="index.html"  >Home</a>
+
+
+
+
+<a href="about.html"  >About</a>
+
+
+<div class="submenu contact-menu">
+    <a href="#">Contact</a>
+
+    <div class="submenu-items">
+        <div class="submenu-item">
+            <img src="images/Tel.png" alt="Phone">
+            <a href="tel:+523312990677">+52 33 1299 0677</a>
+        </div>
+    </div>
+</div>
+
+
+</nav>
+
+<section class="about">
+
+<h1 class="typewriter">I'm José Melchor.</h1>
+
+<div class="about-row">
+
+    <div class="about-photo">
+        <img src="images/Perfil.jpeg" alt="José">
+    </div>
+
+    <div class="about-content">
+
+        <h2 class="hero-subtitle">Financial Engineer Student</h2>
+
+        <p class="hero-description">
+
+        Hi, I'm José Armando Melchor Soto, a 21-year-old Financial Engineering student from Mexico with a strong interest in machine learning, data science, and software development. My work focuses on applying quantitative methods and data-driven approaches to solve financial problems, build analytical tools, and develop interactive web applications.
+
+        Through my projects, I combine finance, programming, and statistical learning to create practical solutions, from financial models to data visualization and web-based tools. I'm always eager to explore new technologies, deepen my understanding of data, and collaborate on innovative ideas.
+
+        </p>
+
+    </div>
+
+</div>
+
+<section class="projects">
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>CV</h3>
+      <p>Explore my professional background and experience.</p>
+    </div>
+    <div class="project-preview">
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank">Download CV</a>
+      <a href="José_Melchor_Resume.pdf" target="_blank">PDF</a>
+    </div>
+  </div>
+
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Licenses & Certifications</h3>
+      <p>Explore my certifications and achievements.</p>
+    </div>
+    <div class="project-preview">
+    </div>
+    <div class="project-links">
+      <a href="https://www.linkedin.com/in/ppmelch/details/certifications/" target="_blank">View Certificates</a>
+    </div>
+  </div>
+
+
+
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Tech Stack</h3>
+      <p>Explore my technical skills and expertise.</p>
+    </div>
+    <div class="project-preview">
+      <img src="images/test.png" alt="Tech Stack">
+    </div>
+    <div class="project-links">
+      <a href="https://carreras.iteso.mx/ingenieria-financiera" target="_blank">Tech Stack</a>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Education</h3>
+      <p>Explore my academic background and qualifications.</p>
+    </div>
+    <div class="project-preview">
+      <img src="images/test.png" alt="Education">
+    </div>
+    <div class="project-links">
+      <a href="https://www.iteso.mx/" target="_blank">ITESO</a>
+    </div>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="social-icons">
+
+<a href="https://github.com/ppmelch" target="_blank">
+<img src="images/github.png" alt="GitHub">
+</a>
+
+<a href="https://linkedin.com/in/ppmelch" target="_blank">
+<img src="images/LK.png" alt="LinkedIn">
+</a>
+
+<a href="https://x.com/ppmelch_" target="_blank">
+<img src="images/X.png" alt="X">
+</a>
+
+<a href="mailto:jose.melchor.soto@gmail.com">
+<img src="images/correo.png" alt="Email">
+</a>
+
+</div>
+
+<h5>© 2026 José Armando Melchor Soto. All rights reserved.</h5>
+
+</footer>
+
+<script>
+
+const menu = document.querySelector(".menu");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 10) {
+        menu.classList.remove("transparent");
+        menu.classList.add("scrolled");
+    } else {
+        menu.classList.remove("scrolled");
+        menu.classList.add("transparent");
+    }
+
+});
+
+</script>
+
+<script>
+
+const links = document.querySelectorAll(".menu a");
+const currentPage = window.location.pathname;
+
+links.forEach(link => {
+    if(link.getAttribute("href") === currentPage.split("/").pop()){
+        link.classList.add("active");
+    }
+});
+
+</script>
+
 </body>
 </html>
