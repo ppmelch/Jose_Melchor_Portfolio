@@ -6,8 +6,8 @@
     <title>José Melchor | Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="..\css\styles_Credit_Scoring_Model.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/styles_Credit_Scoring_Model.css">
 </head>
 
 
@@ -23,23 +23,23 @@
     <div class="submenu-items">
 
         <div class="submenu-item">
-            <img src="images/portfolio.png" alt="Portfolio">
-            <a href="Quant_Porfolio_Optimization.html">Quant Portfolio Optimization</a>
+            <img src="../images/portfolio.png" alt="Portfolio">
+            <a href="../projects/quant_portfolio_optimization.html">Quant Portfolio Optimization</a>
         </div>
 
         <div class="submenu-item">
-            <img src="images/portfolio.png" alt="Portfolio">
-            <a href="Credit_Scoring_Model.html">Credit Scoring Model</a>
+            <img src="../images/portfolio.png" alt="Portfolio">
+            <a href="../projects/credit_scoring.html">Credit Scoring Model</a>
         </div>
 
         <div class="submenu-item">
-            <img src="images/portfolio.png" alt="Portfolio">
-            <a href="Advanced_Trading_Strategies.html">Advanced Trading Strategies</a>
+            <img src="../images/portfolio.png" alt="Portfolio">
+            <a href="../projects/trading_strategies.html">Advanced Trading Strategies</a>
         </div>
 
         <div class="submenu-item">
-            <img src="images/portfolio.png" alt="Portfolio">
-            <a href="Mexico_Crime_Data_Explorer.html">Mexico Crime Data Explorer</a>
+            <img src="../images/portfolio.png" alt="Portfolio">
+            <a href="../projects/mexico_crime_data_explorer.html">Mexico Crime Data Explorer</a>
         </div>
 
     </div>
@@ -48,12 +48,9 @@
 
 <a href="https://github.com/ppmelch" target="_blank">GitHub</a>
 
-<a href="index.html"  >Home</a>
+<a href="../index.html"  >Home</a>
 
-
-
-
-<a href="about.html"  >About</a>
+<a href="../about.html"  >About</a>
 
 
 <div class="submenu contact-menu">
@@ -61,7 +58,7 @@
 
     <div class="submenu-items">
         <div class="submenu-item">
-            <img src="images/Tel.png" alt="Phone">
+            <img src="../images/Tel.png" alt="Phone">
             <a href="tel:+523312990677">+52 33 1299 0677</a>
         </div>
     </div>
@@ -126,19 +123,19 @@ The Credit Scoring Model transforms raw consumer credit data into interpretable 
 <div class="social-icons">
 
 <a href="https://github.com/ppmelch" target="_blank">
-<img src="images/github.png" alt="GitHub">
+<img src="../images/github.png" alt="GitHub">
 </a>
 
 <a href="https://linkedin.com/in/ppmelch" target="_blank">
-<img src="images/LK.png" alt="LinkedIn">
+<img src="../images/LK.png" alt="LinkedIn">
 </a>
 
 <a href="https://x.com/ppmelch_" target="_blank">
-<img src="images/X.png" alt="X">
+<img src="../images/X.png" alt="X">
 </a>
 
 <a href="mailto:jose.melchor.soto@gmail.com">
-<img src="images/correo.png" alt="Email">
+<img src="../images/correo.png" alt="Email">
 </a>
 
 </div>
@@ -147,36 +144,8 @@ The Credit Scoring Model transforms raw consumer credit data into interpretable 
 
 </footer>
 
-<script>
 
-const menu = document.querySelector(".menu");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 10) {
-        menu.classList.remove("transparent");
-        menu.classList.add("scrolled");
-    } else {
-        menu.classList.remove("scrolled");
-        menu.classList.add("transparent");
-    }
-
-});
-
-</script>
-
-<script>
-
-const links = document.querySelectorAll(".menu a");
-const currentPage = window.location.pathname;
-
-links.forEach(link => {
-    if(link.getAttribute("href") === currentPage.split("/").pop()){
-        link.classList.add("active");
-    }
-});
-
-</script>
+<script src="../js/menu.js"></script>
 
 </body>
 </html>
