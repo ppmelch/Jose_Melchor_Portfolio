@@ -400,11 +400,105 @@ margin-bottom:60px;
 }
 
 .project-header p{
-    margin-top:5px;
+    margin-top:20px;
     font-size:17px;
     color:#444;
 }
 
 .project-card:hover .project-header p{
     color:#ddd;
+}
+
+
+.tech-stack{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    margin-top:30px;
+}
+
+.project-card:hover .tech-category h3{
+    color: white;
+}
+
+.project-card:hover .tech-items span{
+    background:#ddd;
+    color:#454c72;
+}
+
+.tech-category h3{
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+}
+
+.tech-category h3:hover{
+    color:#ddd;
+}
+
+.tech-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    color: #FFFFFF;
+}
+
+.tech-items span{
+    padding:10px 17px;
+    border-radius:20px;
+    background:#454c72;
+    font-size:18px;
+}
+
+.tech-items span:hover{
+    background: #ddd;
+    color: #454c72;
+    cursor:default;
+}
+
+.education-card{
+    margin-top:55px;
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+.education-card h3{
+    font-size:23px;
+    font-weight:600;
+    margin-bottom:6px;
+    top: 20px;
+}
+
+.degree{
+    font-style:italic;
+    margin-bottom:6px;
+    font-size: 20px;
+}
+
+.edu-meta{
+    font-size:18px;
+    opacity:0.8;
+    margin-bottom:8px;
+}
+
+.gpa{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.courses{
+    font-size:18px;
+    max-width:600px;
+    margin:auto;
+    opacity:0.8;
+}
+
+.divider{
+    width:85%;
+    height:1px;
+    background:rgba(0,0,0,0.15);
+    margin:25px auto;
+    margin-top: 0%;
 }
