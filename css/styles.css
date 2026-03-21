@@ -301,7 +301,7 @@ section{
 
 .project-card:hover{
     transform:translateY(-15px);
-    background: #454c72;
+    background: #313131;
     color: #FFFFFF;
 }
 
